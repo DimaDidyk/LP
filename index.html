@@ -27,10 +27,6 @@
                     <img src="./img/ic_logo.png" alt="Pyramid" class="logo">
                 </a>
                 
-                <div class="marquee">
-                    <p>{{ language['ticker'] }}</p>
-                </div>
-
                 <div id="language-menu" class="menu">
                     <a class="menu-item" language="ch"
                     ng-class="{active: currentLanguage == 'ch'}">Ch</a>
@@ -39,15 +35,9 @@
                     <a href="#!/" class="menu-item"
                     ng-class="{active: $route.current.activetab == 'main'}">
                     {{ language['menu-item-1'] }}</a>
-                    <a href="#!machine" class="menu-item"
-                    ng-class="{active: $route.current.activetab == 'machine'}">
-                    {{ language['menu-item-2'] }}</a>
                     <a href="#!token" class="menu-item"
                     ng-class="{active: $route.current.activetab == 'token'}">
                     {{ language['menu-item-3'] }}</a>
-                    <a href="#!about" class="menu-item"
-                    ng-class="{active: $route.current.activetab == 'about'}">
-                    {{ language['menu-item-4'] }}</a>
                     <a href="{{ language['menu-item-white-paper'] }}" class="menu-item" target="_blank">
                     {{ language['menu-item-5'] }}</a>
                 </div>
@@ -65,9 +55,7 @@
             <a href="https://www.facebook.com/pmd.pyramid" class="social-icon"><img src="./img/socials/facebook.png" alt=""></a>
             <a href="mailto:Pyramid@jhfund.vip" class="social-icon"><img src="./img/socials/email.png" alt=""></a>
         </div>
-        <div class="marquee mobile">
-            <p>{{ language['ticker'] }}</p>
-        </div>
+
     </header>
     
     <!-- animate -->
