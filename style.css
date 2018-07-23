@@ -5,17 +5,16 @@ body{
 	width: 100%;
 	overflow-x: hidden;
 }
+
 body:before,
 body:after{
-    content: '无忧链';
+	content: none;
     position: fixed;
     top: 0;
     bottom: 0;
     width: 100%;
     display: table;
-    -webkit-writing-mode: vertical-rl;
-        -ms-writing-mode: tb-rl;
-            writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
     text-align: center;
     height: 100%;
     color: rgb(204, 204, 204);
@@ -29,12 +28,6 @@ body:after{
 }
 body:before{
 	left: 14px;
-	-webkit-writing-mode: vertical-lr;
-	    -ms-writing-mode: tb-lr;
-	        writing-mode: vertical-lr;
-	-webkit-transform: rotate(180deg);
-	    -ms-transform: rotate(180deg);
-	        transform: rotate(180deg);
 }
 main{
 	padding-top: 240px;
