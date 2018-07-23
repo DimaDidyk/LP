@@ -29,13 +29,8 @@ if( currentLanguage == "ch"){
 	        // slide3
 	        "slide3-title-1": '无忧链',
 	        "slide3-title-2": '生态构图',
-<<<<<<< HEAD
 	        "slide3-img": './img/diagramma.png',
-	        "slide3-p-1": 'PYRAMID是一个全球分布式IaaS生态服务平台，结合了最新的区块链技术，专为下一代智能商品流通交易平台而设计，解决了供应链中的认证、 安全和互操作性方面的问题，有助于保护网络同时消除对中心化管理的依赖。',
-=======
-	        "slide3-img": 'img/diagramma.png',
 	        "slide3-p-1": '无忧链的运行系统采用了模块组件化的底层架构，在用户搭建区块链应用或子链的时候，大部分组件被设计为可以相互引用以及可插拔技术，例如工时组件就支持 POW、POS、DPOS、PBFT 等。',
->>>>>>> 4047b91c26fd0a3e27ef1972de993cc32a51f5c2
 	        // slide 4
 	        "slide4-title-1": '无忧链',
 	        "slide4-title-2": '新闻',
