@@ -30,7 +30,7 @@ if( currentLanguage == "ch"){
 	        // slide3
 	        "slide3-title-1": 'PYRAMID',
 	        "slide3-title-2": '生态构图',
-	        "slide3-img": 'img/diagramma.png',
+	        "slide3-img": './img/diagramma.png',
 	        "slide3-p-1": 'PYRAMID是一个全球分布式IaaS生态服务平台，结合了最新的区块链技术，专为下一代智能商品流通交易平台而设计，解决了供应链中的认证、 安全和互操作性方面的问题，有助于保护网络同时消除对中心化管理的依赖。',
 	        // slide 4
 	        "slide4-title-1": 'PYRAMID',

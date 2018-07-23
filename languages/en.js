@@ -30,7 +30,7 @@ if( currentLanguage == "en"){
 	        // slide3
 	        "slide3-title-1": 'PYRAMID',
 	        "slide3-title-2": 'Ecological composition',
-	        "slide3-img": 'img/EN.png',
+	        "slide3-img": './img/EN.png',
 	        "slide3-p-1": 'PYRAMID is a global distributed IaaS ecosystem service platform that combines the latest blockchain technology and is specifically designed for the next generation of intelligent commodity circulation trading platforms. It solves problems in certification, security and interoperability in the supply chain. Helps protect the network while eliminating the need for centralized management.',
 	        // slide 4
 	        "slide4-title-1": 'PYRAMID',
