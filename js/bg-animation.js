@@ -18,4 +18,4 @@ var particleCanvas = new ParticleNetwork(canvasDiv, options);
 
 setTimeout(function(){
 	var particleCanvas = new ParticleNetwork(canvasDiv, options);
-}, 300);
+}, 500);
