@@ -2,59 +2,57 @@ if( currentLanguage == "ch"){
 	app.controller("language", function ($scope) {
 	    $scope.language = {
 	    	// Menu
-	        "menu-item-1": 'PMD',
-	        "menu-item-2": '矿机',
+	        "menu-item-1": '首页',
 	        "menu-item-3": 'Token分配',
 	        "menu-item-4": '关于',
 	        "menu-item-5": '白皮书',
-	        "menu-item-white-paper": 'Pyramid_Whitepaper_CN_1.0.pdf',
+	        "menu-item-white-paper": 'LP_Whitepaper_CN_1.0.pdf',
 
 	        // ticker
 	        "ticker": 'PMD将在8月开展全球超级节点竞选，届时PMD运营方新加坡JIAHE基金将会对竞选节点开展空投奖励，空投总奖励约2亿PMD，空投奖励将用于全球市场推广，本次空投全部来自于基金会锁仓的3.5亿PMD。',
 	        
 	    	// HOME PAGE
 	    	// slide 1
-	        "slide1-title-1": 'PYRAMID',
-	        "slide1-title-2": '金字塔',
-	        "slide1-p": '新一代文件存储底层协议',
+	        "slide1-title-1": '无忧链',
+	        "slide1-title-2": '劳动力共享公益透明化服务平台',
+	        "slide1-p": '无忧链代币平台基于区块链技术的建立，以智能合约作为支付技术，充分发挥区块链去中心化、信息公正透明化特点，是平台所有信息都得以共享与信任，为用户提供高品质的劳动力服务。',
 	        "slide1-right-p": '上线倒计时',
 	        // slide2
-	        "slide2-title-1": 'PYRAMID',
+	        "slide2-title-1": '无忧链',
 	        "slide2-title-2": '生态系统',
-	        "slide2-ecosystem-1": 'Pyramid PC',
-	        "slide2-ecosystem-2": 'Pyramid Chain',
-	        "slide2-ecosystem-3": 'Pyramid Coin',
-	        "slide2-ecosystem-text-1": 'Pyramid PC 是一款基于内容寻址技术点对点超媒体协议存储、Pyramid Chain公链管理数字资产，通过智能合约对用户定制奖励制度的硬件主机。',
-	        "slide2-ecosystem-text-2": 'Pyramid Chain 是一个服务于网络存储文件的去中介化的公共区块链平台，致力于打造网络存储文件领域信息互通、价值互联、信任互换的区块链网络系统。',
-	        "slide2-ecosystem-text-3": 'PMD 是为支持平台生态建设而产生的，一个基于共识机制、为促成一个全新的支付系统和一种完全数字化的货币而构建的去中心化的对等支付网络。',
+	        "slide2-ecosystem-1": 'LP Ecosystem',
+	        "slide2-ecosystem-2": 'LP Chain',
+	        "slide2-ecosystem-3": 'LP Coin',
+	        "slide2-ecosystem-text-1": 'LP Ecosystem 开启全球化共享劳动力服务数字化时代，实现没有中间商剥削劳动者的收益，平台也不抽取任何佣金。',
+	        "slide2-ecosystem-text-2": 'LP Chain 是全球第一个劳动力共享公益透明化服务平台，是基于区块链技术开发的新生态，致力于建立一个实现全球共享透明的劳动力服务平台。。',
+	        "slide2-ecosystem-text-3": 'LP Token 通过将底层闲散劳动力通证化，每个 Token 代表的劳动力每小时可创造的平均经济效益。',
 	        // slide3
-	        "slide3-title-1": 'PYRAMID',
+	        "slide3-title-1": '无忧链',
 	        "slide3-title-2": '生态构图',
+<<<<<<< HEAD
 	        "slide3-img": './img/diagramma.png',
 	        "slide3-p-1": 'PYRAMID是一个全球分布式IaaS生态服务平台，结合了最新的区块链技术，专为下一代智能商品流通交易平台而设计，解决了供应链中的认证、 安全和互操作性方面的问题，有助于保护网络同时消除对中心化管理的依赖。',
+=======
+	        "slide3-img": 'img/diagramma.png',
+	        "slide3-p-1": '无忧链的运行系统采用了模块组件化的底层架构，在用户搭建区块链应用或子链的时候，大部分组件被设计为可以相互引用以及可插拔技术，例如工时组件就支持 POW、POS、DPOS、PBFT 等。',
+>>>>>>> 4047b91c26fd0a3e27ef1972de993cc32a51f5c2
 	        // slide 4
-	        "slide4-title-1": 'PYRAMID',
+	        "slide4-title-1": '无忧链',
 	        "slide4-title-2": '新闻',
 	        "slide4-p": '媒体报道、新闻发布等更多讯息!',
-	        "slide4-menu-1": '金字塔 PYRAMID 与 imToken 建立正式合作伙伴关系',
-	        "slide4-menu-2": '金字塔 PYRAMID 到底是什么',
-	        "slide4-menu-3": '金字塔 PYRAMID 如何为您带来更多的收益',
+	        "slide4-menu-1": '',
+	        "slide4-menu-2": '',
+	        "slide4-menu-3": '',
 	        // slie5
-	        "slide5-title-1": 'PYRAMID',
+	        "slide5-title-1": '无忧链',
 	        "slide5-title-2": '订阅邮箱',
 	        "slide5-button": '订阅',
 	        "slide5-p": '订阅我们，及时获得更多讯息!',
 	        "slide5-placeholder": '请输入您的邮箱',
 	        // slie6
-	        "slide6-title-1": 'PYRAMID',
+	        "slide6-title-1": '无忧链',
 	        "slide6-title-2": '联系我们',
 	        "slide6-p": '疑问、咨询、合作等，期待你给我们来信！!',
-
-	        // MACHINE PAGE
-	        "machine-title-1": 'PYRAMID',
-	        "machine-title-2": '技术',
-	        "machine-p-1": 'Pyramid将结合实体矿机技术，Pyramid生态中的令牌PMD将由用户通过实体矿机挖矿方式获得。',
-	        "machine-p-2": '由此构建丰富可用的分布式节点，维持网络的稳定。',
 
 	        // ABOUT PAGE
 	        "about-title": '关于',
@@ -72,20 +70,20 @@ if( currentLanguage == "ch"){
 	        // TOKEN PAGE
 	        "token-title-1": 'Token分配',
 	        "token-p-1": '项目',
-	        "token-p-2": '团队前期投入 800 个比特币用于系统开发及社区运营。计划总发行量 10 亿枚PMD。',
+	        "token-p-2": '计划总发行量 10 亿枚 LP Token。',
 	        "token-p-3": '具体分配方案：',
 
-	        "token-progress-title-1": '挖矿产生',
-	        "token-progress-p-1": '总发行量的 45% 将会通过 Pyramid PC 挖矿机制方式投放到用户所在的市场中，高达 4.5 亿 PMD 通过挖矿进行代币奖励。',
+	        "token-progress-title-1": '私募比例',
+	        "token-progress-p-1": '总发行量的 39%。',
 
-	        "token-progress-title-2": '项目基金会储备金',
-	        "token-progress-p-2": '总发行量的 35% 作为基金会储备金，用于 Pyramid 生态后续项目的技术开发、社区运 营、商务合作、宣传费用以及项目生态的完善。此部分资金的使用需要基金会决议，并提前进行公示。',
+	        "token-progress-title-2": '团队运营',
+	        "token-progress-p-2": '总发行量的 30%。',
 
-	        "token-progress-title-3": '初始团队',
-	        "token-progress-p-3": '总发行量的 12% 用于奖励在 Pyramid Chain 公有链建设、开发过程中做出努力和贡献的相关团队，以保证 PMD 后续几年稳定的运营和发展。',
+	        "token-progress-title-3": '团队激励',
+	        "token-progress-p-3": '总发行量的 20%。',
 
-	        "token-progress-title-4": '技术开发',
-	        "token-progress-p-4": '总发行量的 8% 奖励用于技术研发和支持相关的投入。',
+	        "token-progress-title-4": '技术应用研发',
+	        "token-progress-p-4": '总发行量的 11%。',
 
 	    };
 	});
