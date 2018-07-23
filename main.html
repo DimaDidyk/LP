@@ -1,0 +1,142 @@
+    <div id="three-container"></div>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- 1 -->
+            <div class="swiper-slide">
+                <div class="container">
+                    <div class="row" >
+                        <div class="col-sm-6 left-content">
+                            <h2>{{ language['slide1-title-1'] }}</h2>
+                            <h2>{{ language['slide1-title-2'] }}</h2>
+                            <p>{{ language['slide1-p'] }}</p>
+                        </div>
+                        <div class="col-sm-6 right-content">
+                            <p>{{ language['slide1-right-p'] }}</p>
+                            <div class="time">
+                                <div id="date-countdown"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="swiper-slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 left-content">
+                            <h2>{{ language['slide2-title-1'] }}</h2>
+                            <h2>{{ language['slide2-title-2'] }}</h2>
+                            <div class="ecosystem" id="ecosystem" >
+                                <div class="ecosystem-item active">
+                                    <img src="./img/ic_pc.png" alt="ic_pc">
+                                    <span>{{ language['slide2-ecosystem-1'] }}</span>
+                                </div>
+                                <div class="ecosystem-item">
+                                    <img src="./img/ic_blockchain.png" alt="ic_blockchain">
+                                    <span>{{ language['slide2-ecosystem-2'] }}</span>
+                                </div>
+                                <div class="ecosystem-item">
+                                    <img src="./img/ic_service.png" alt="ic_service">
+                                    <span>{{ language['slide2-ecosystem-3'] }}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 right-content">
+                            <div class="tab-show">
+                                <p class="active">{{ language['slide2-ecosystem-text-1'] }}</p>
+                                <p>{{ language['slide2-ecosystem-text-2'] }}</p>
+                                <p>{{ language['slide2-ecosystem-text-3'] }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="swiper-slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 left-content">
+                            <h2>{{ language['slide3-title-1'] }}</h2>
+                            <h2>{{ language['slide3-title-2'] }}</h2>
+                            <p>{{ language['slide3-p-1'] }}</p>
+                        </div>
+                        <div class="col-sm-6 right-content">
+                            <img src="{{ language['slide3-img'] }}" alt="pyramid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="swiper-slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 left-content">
+                            <h2>{{ language['slide4-title-1'] }}</h2>
+                            <h2>{{ language['slide4-title-2'] }}</h2>
+                            <p>{{ language['slide4-p'] }}</p>
+                        </div>
+                        <div class="col-sm-6 right-content">
+                            <div class="menu-slide">
+                                <a href="https://mp.weixin.qq.com/s/Ore4-jddNYHzNjuRxUf6Rg">
+                                    <p><span>01</span>
+                                    {{ language['slide4-menu-1'] }}</p>
+                                </a>
+                                <p><span>02</span>
+                                {{ language['slide4-menu-2'] }}</p>
+                                <p><span>03</span>
+                                {{ language['slide4-menu-3'] }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="swiper-slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 left-content">
+                            <h2>{{ language['slide5-title-1'] }}</h2>
+                            <h2>{{ language['slide5-title-2'] }} </h2>
+                            <p>{{ language['slide5-p'] }}</p>
+                        </div>
+                        <div class="col-sm-6 right-content text-form">
+                            <form action="">
+                                <input type="text" name="text" placeholder="{{ language['slide5-placeholder'] }}">
+                                <input type="submit" 
+                                value="{{ language['slide5-button'] }}">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="swiper-slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 left-content">
+                            <h2>{{ language['slide6-title-1'] }}</h2>
+                            <h2>{{ language['slide6-title-2'] }} </h2>
+                            <p>{{ language['slide6-p'] }}</p>
+                        </div>
+                        <div class="col-sm-6 right-content email-form">
+                            <form action="">
+                                <div class="wrap-email-input">
+                                    <input type="email" name="email" placeholder="email">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+
