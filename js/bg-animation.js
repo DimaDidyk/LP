@@ -1,110 +1,161 @@
-// particle.min.js hosted on GitHub
-// Scroll down for initialisation code
+// Ported from Stefan Gustavson's java implementation
+// http://staffwww.itn.liu.se/~stegu/simplexnoise/simplexnoise.pdf
+// Read Stefan's excellent paper for details on how this code works.
+//
+// Sean McCullough banksean@gmail.com
 
-! function(a) {
-    var b = "object" == typeof self && self.self === self && self || "object" == typeof global && global.global === global && global;
-    "function" == typeof define && define.amd ? define(["exports"], function(c) {
-        b.ParticleNetwork = a(b, c)
-    }) : "object" == typeof module && module.exports ? module.exports = a(b, {}) : b.ParticleNetwork = a(b, {})
-}(function(a, b) {
-    var c = function(a) {
-        this.canvas = a.canvas, this.g = a.g, this.particleColor = a.options.particleColor, this.x = Math.random() * this.canvas.width, this.y = Math.random() * this.canvas.height, this.velocity = {
-            x: (Math.random() - .5) * a.options.velocity,
-            y: (Math.random() - .5) * a.options.velocity
-        }
-    };
-    return c.prototype.update = function() {
-        (this.x > this.canvas.width + 20 || this.x < -20) && (this.velocity.x = -this.velocity.x), (this.y > this.canvas.height + 20 || this.y < -20) && (this.velocity.y = -this.velocity.y), this.x += this.velocity.x, this.y += this.velocity.y
-    }, c.prototype.h = function() {
-        this.g.beginPath(), this.g.fillStyle = this.particleColor, this.g.globalAlpha = .7, this.g.arc(this.x, this.y, 3, 0, 2 * Math.PI), this.g.fill()
-    }, b = function(a, b) {
-        this.i = a, this.i.size = {
-            width: this.i.offsetWidth,
-            height: this.i.offsetHeight
-        }, b = void 0 !== b ? b : {}, this.options = {
-            particleColor: void 0 !== b.particleColor ? b.particleColor : "#fff",
-            background: void 0 !== b.background ? b.background : "#1a252f",
-            interactive: void 0 !== b.interactive ? b.interactive : !0,
-            velocity: 2,
-            density: this.j(b.density)
-        }, this.init()
-    }, b.prototype.init = function() {
-        if (this.k = document.createElement("div"), this.i.appendChild(this.k), this.l(this.k, {
-                position: "absolute",
-                top: 0,
-                left: 0,
-                bottom: 0,
-                right: 0,
-                "z-index": 1
-            }), /(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(this.options.background)) this.l(this.k, {
-            background: this.options.background
-        });
-        else {
-            if (!/\.(gif|jpg|jpeg|tiff|png)$/i.test(this.options.background)) return console.error("Please specify a valid background image or hexadecimal color"), !1;
-            this.l(this.k, {
-                background: 'url("' + this.options.background + '") no-repeat center',
-                "background-size": "cover"
-            })
-        }
-        if (!/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(this.options.particleColor)) return console.error("Please specify a valid particleColor hexadecimal color"), !1;
-        this.canvas = document.createElement("canvas"), this.i.appendChild(this.canvas), this.g = this.canvas.getContext("2d"), this.canvas.width = this.i.size.width, this.canvas.height = this.i.size.height, this.l(this.i, {
-            position: "relative"
-        }), this.l(this.canvas, {
-            "z-index": "20",
-            position: "relative"
-        }), window.addEventListener("resize", function() {
-            return this.i.offsetWidth === this.i.size.width && this.i.offsetHeight === this.i.size.height ? !1 : (this.canvas.width = this.i.size.width = this.i.offsetWidth, this.canvas.height = this.i.size.height = this.i.offsetHeight, clearTimeout(this.m), void(this.m = setTimeout(function() {
-                this.o = [];
-                for (var a = 0; a < this.canvas.width * this.canvas.height / this.options.density; a++) this.o.push(new c(this));
-                this.options.interactive && this.o.push(this.p), requestAnimationFrame(this.update.bind(this))
-            }.bind(this), 500)))
-        }.bind(this)), this.o = [];
-        for (var a = 0; a < this.canvas.width * this.canvas.height / this.options.density; a++) this.o.push(new c(this));
-        this.options.interactive && (this.p = new c(this), this.p.velocity = {
-            x: 0,
-            y: 0
-        }, this.o.push(this.p), this.canvas.addEventListener("mousemove", function(a) {
-            this.p.x = a.clientX - this.canvas.offsetLeft, this.p.y = a.clientY - this.canvas.offsetTop
-        }.bind(this)), this.canvas.addEventListener("mouseup", function(a) {
-            this.p.velocity = {
-                x: (Math.random() - .5) * this.options.velocity,
-                y: (Math.random() - .5) * this.options.velocity
-            }, this.p = new c(this), this.p.velocity = {
-                x: 0,
-                y: 0
-            }, this.o.push(this.p)
-        }.bind(this))), requestAnimationFrame(this.update.bind(this))
-    }, b.prototype.update = function() {
-        this.g.clearRect(0, 0, this.canvas.width, this.canvas.height), this.g.globalAlpha = 1;
-        for (var a = 0; a < this.o.length; a++) {
-            this.o[a].update(), this.o[a].h();
-            for (var b = this.o.length - 1; b > a; b--) {
-                var c = Math.sqrt(Math.pow(this.o[a].x - this.o[b].x, 2) + Math.pow(this.o[a].y - this.o[b].y, 2));
-                c > 120 || (this.g.beginPath(), this.g.strokeStyle = this.options.particleColor, this.g.globalAlpha = (120 - c) / 120, this.g.lineWidth = .7, this.g.moveTo(this.o[a].x, this.o[a].y), this.g.lineTo(this.o[b].x, this.o[b].y), this.g.stroke())
-            }
-        }
-        0 !== this.options.velocity && requestAnimationFrame(this.update.bind(this))
-    }, b.prototype.setVelocity = function(a) {
-        return "fast" === a ? 1 : "slow" === a ? .33 : "none" === a ? 0 : .66
-    }, b.prototype.j = function(a) {
-        return "high" === a ? 5e3 : "low" === a ? 2e4 : isNaN(parseInt(a, 10)) ? 1e4 : a
-    }, b.prototype.l = function(a, b) {
-        for (var c in b) a.style[c] = b[c]
-    }, b
-});
-
-// Initialisation
-
-var canvasDiv = document.getElementById('three-container');
-var options = {
-  particleColor: '#888',
-  background: 'https://raw.githubusercontent.com/JulianLaval/canvas-particle-network/master/img/demo-bg.jpg',
-  interactive: true,
-  density: 'high'
+/**
+ * You can pass in a random number generator object if you like.
+ * It is assumed to have a random() method.
+ */
+var ClassicalNoise = function(r) { // Classic Perlin noise in 3D, for comparison 
+  if (r == undefined) r = Math;
+  this.grad3 = [[1,1,0],[-1,1,0],[1,-1,0],[-1,-1,0], 
+                                 [1,0,1],[-1,0,1],[1,0,-1],[-1,0,-1], 
+                                 [0,1,1],[0,-1,1],[0,1,-1],[0,-1,-1]]; 
+  this.p = [];
+  for (var i=0; i<256; i++) {
+    this.p[i] = Math.floor(r.random()*256);
+  }
+  // To remove the need for index wrapping, double the permutation table length 
+  this.perm = []; 
+  for(var i=0; i<512; i++) {
+    this.perm[i]=this.p[i & 255];
+  }
 };
 
-var particleCanvas = new ParticleNetwork(canvasDiv, options);
+ClassicalNoise.prototype.dot = function(g, x, y, z) { 
+    return g[0]*x + g[1]*y + g[2]*z; 
+};
 
-setTimeout(function(){
-	var particleCanvas = new ParticleNetwork(canvasDiv, options);
-}, 500);
+ClassicalNoise.prototype.mix = function(a, b, t) { 
+    return (1.0-t)*a + t*b; 
+};
+
+ClassicalNoise.prototype.fade = function(t) { 
+    return t*t*t*(t*(t*6.0-15.0)+10.0); 
+};
+
+  // Classic Perlin noise, 3D version 
+ClassicalNoise.prototype.noise = function(x, y, z) { 
+  // Find unit grid cell containing point 
+  var X = Math.floor(x); 
+  var Y = Math.floor(y); 
+  var Z = Math.floor(z); 
+  
+  // Get relative xyz coordinates of point within that cell 
+  x = x - X; 
+  y = y - Y; 
+  z = z - Z; 
+  
+  // Wrap the integer cells at 255 (smaller integer period can be introduced here) 
+  X = X & 255; 
+  Y = Y & 255; 
+  Z = Z & 255;
+  
+  // Calculate a set of eight hashed gradient indices 
+  var gi000 = this.perm[X+this.perm[Y+this.perm[Z]]] % 12; 
+  var gi001 = this.perm[X+this.perm[Y+this.perm[Z+1]]] % 12; 
+  var gi010 = this.perm[X+this.perm[Y+1+this.perm[Z]]] % 12; 
+  var gi011 = this.perm[X+this.perm[Y+1+this.perm[Z+1]]] % 12; 
+  var gi100 = this.perm[X+1+this.perm[Y+this.perm[Z]]] % 12; 
+  var gi101 = this.perm[X+1+this.perm[Y+this.perm[Z+1]]] % 12; 
+  var gi110 = this.perm[X+1+this.perm[Y+1+this.perm[Z]]] % 12; 
+  var gi111 = this.perm[X+1+this.perm[Y+1+this.perm[Z+1]]] % 12; 
+  
+  // The gradients of each corner are now: 
+  // g000 = grad3[gi000]; 
+  // g001 = grad3[gi001]; 
+  // g010 = grad3[gi010]; 
+  // g011 = grad3[gi011]; 
+  // g100 = grad3[gi100]; 
+  // g101 = grad3[gi101]; 
+  // g110 = grad3[gi110]; 
+  // g111 = grad3[gi111]; 
+  // Calculate noise contributions from each of the eight corners 
+  var n000= this.dot(this.grad3[gi000], x, y, z); 
+  var n100= this.dot(this.grad3[gi100], x-1, y, z); 
+  var n010= this.dot(this.grad3[gi010], x, y-1, z); 
+  var n110= this.dot(this.grad3[gi110], x-1, y-1, z); 
+  var n001= this.dot(this.grad3[gi001], x, y, z-1); 
+  var n101= this.dot(this.grad3[gi101], x-1, y, z-1); 
+  var n011= this.dot(this.grad3[gi011], x, y-1, z-1); 
+  var n111= this.dot(this.grad3[gi111], x-1, y-1, z-1); 
+  // Compute the fade curve value for each of x, y, z 
+  var u = this.fade(x); 
+  var v = this.fade(y); 
+  var w = this.fade(z); 
+   // Interpolate along x the contributions from each of the corners 
+  var nx00 = this.mix(n000, n100, u); 
+  var nx01 = this.mix(n001, n101, u); 
+  var nx10 = this.mix(n010, n110, u); 
+  var nx11 = this.mix(n011, n111, u); 
+  // Interpolate the four results along y 
+  var nxy0 = this.mix(nx00, nx10, v); 
+  var nxy1 = this.mix(nx01, nx11, v); 
+  // Interpolate the two last results along z 
+  var nxyz = this.mix(nxy0, nxy1, w); 
+
+  return nxyz; 
+};
+
+
+
+  var canvas = document.getElementById('canvas'),
+ctx = canvas.getContext('2d'),
+perlin = new ClassicalNoise(),
+variation = .003,
+amp = 200,
+variators = [],
+max_lines = navigator.userAgent.toLowerCase().indexOf('firefox') > -1 ? 25 : 30,
+canvasWidth,
+canvasHeight,
+start_y;
+
+for (var i = 0, u = 0; i < max_lines; i++, u += .02) {
+  variators[i] = u;
+}
+
+function draw() {
+  ctx.shadowColor = "rgba(43, 205, 255, 1)";
+  ctx.shadowBlur = 0;
+
+  for (var i = 0; i <= max_lines; i++) {
+    ctx.beginPath();
+    ctx.moveTo(0, start_y);
+    for (var x = 0; x <= canvasWidth; x++) {
+      var y = perlin.noise(x * variation + variators[i], x * variation, 0);
+      ctx.lineTo(x, start_y + amp * y);
+    }
+    var color = Math.floor(150 * Math.abs(y));
+    var alpha = Math.min(Math.abs(y), .8) + .1;
+    ctx.strokeStyle = "rgba(80,210,240," + alpha + ")";
+    ctx.stroke();
+    ctx.closePath();
+
+    variators[i] += .005;
+  }
+}
+
+(function init() {
+  resizeCanvas();
+  animate();
+  window.addEventListener('resize', resizeCanvas);
+})();
+
+function animate() {
+  ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+  draw();
+  requestAnimationFrame(animate);
+}
+
+function resizeCanvas() {
+  canvasWidth = document.documentElement.clientWidth,
+  canvasHeight = document.documentElement.clientHeight;
+
+  canvas.setAttribute("width", canvasWidth);
+  canvas.setAttribute("height", canvasHeight);
+
+  start_y = canvasHeight / 2;
+}
+//# sourceURL=pen.js
