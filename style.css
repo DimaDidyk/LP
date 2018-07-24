@@ -626,10 +626,21 @@ border-bottom: 1px solid #fff;
 		margin-left: 20px;
 	}
 
+	.container{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
+
+	.container{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
 	header{
 		height: 66px;
 		background: #f3f3f3;
@@ -709,6 +720,12 @@ border-bottom: 1px solid #fff;
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
+	.container{
+		padding-left: 15px;
+		padding-right: 15px;
+		width: 100%;
+	}
+
 	/*#three-container{
 		display: none;
 	}
@@ -756,9 +773,16 @@ border-bottom: 1px solid #fff;
 		margin: 0;
 	    font-size: 32px;
 	}
-	.ecosystem,
 	#home .left-content p {
 	    margin-top: 10px;
+	}
+	.ecosystem{
+		margin-bottom: 40px;
+		margin-top: 20px;
+		display: flex;
+	}
+	.ecosystem .ecosystem-item{
+		margin: 0 auto;
 	}
 	#home .right-content{
 		max-width: 100%;
