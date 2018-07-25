@@ -339,7 +339,7 @@ body {
 #canvas {
 	z-index: 1;
 	background: #262b2e;
-	height: 100%;
+	height: 800px;
 }
 #canvasbg {
 	z-index: -10;
