@@ -338,7 +338,7 @@ body {
 
 #canvas {
 	z-index: 1;
-	background: #262b2e;
+	/* background: #262b2e; */
 	height: 800px;
 }
 #canvasbg {
@@ -347,8 +347,9 @@ body {
 	-moz-filter: blur(3px);
 	-o-filter: blur(3px);
 	filter: blur(3px);
-	opacity: 0.6;
+	/* opacity: 0.6; */
 	background: #262b2e;
+	z-index: 00;
 }
 #wrapper canvas{
 	display: none;
