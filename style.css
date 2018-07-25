@@ -1,4 +1,4 @@
-/* Typography
+﻿/* Typography
 -------------------------------------*/
 body{
 	background-color: #f7f7f7 !important;
@@ -334,12 +334,12 @@ body {
 	top: 0;
 	left: 0;
 	width: 2500px;
-	height: 100%; 
 }
 
 #canvas {
 	z-index: 1;
 	background: #262b2e;
+	height: 100%;
 }
 #canvasbg {
 	z-index: -10;
@@ -352,6 +352,7 @@ body {
 }
 #wrapper canvas{
 	display: none;
+
 }
 #home #wrapper canvas{
 	display: block;
