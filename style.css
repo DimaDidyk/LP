@@ -350,7 +350,12 @@ body {
 	opacity: 0.6;
 	background: #262b2e;
 }
-
+#wrapper canvas{
+	display: none;
+}
+#home #wrapper canvas{
+	display: block;
+}
 #home #three-container{
 	opacity: 1;
 	z-index: 9;
