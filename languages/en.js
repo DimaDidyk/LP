@@ -21,7 +21,7 @@ if( currentLanguage == "en"){
 			 "slide2-ecosystem-2": 'LP Chain',
 			 "slide2-ecosystem-3": 'LP Coin',
 			 "slide2-ecosystem-text-1": 'LP Ecosystem opens the era of globalized shared labor service digitalization, realizing the benefits of no middlemen exploiting workers, and the platform does not draw any commission.',
-			 "slide2-ecosystem-text-2": `LP Chain is the world's first labor-sharing public service transparent service platform. It is a new ecosystem based on blockchain technology development, and is committed to building a global shared and transparent labor service platform.',
+			 "slide2-ecosystem-text-2": 'LP Chain is the world\'s first labor-sharing public service transparent service platform. It is a new ecosystem based on blockchain technology development, and is committed to building a global shared and transparent labor service platform.',
 			 "slide2-ecosystem-text-3": 'LP Token By averaging the underlying idle workforce, the average economic benefit per hour that each Token represents can be created.',
 			 // slide3
 			 "slide3-title-1": '无忧链',

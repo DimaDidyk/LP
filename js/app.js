@@ -28,7 +28,7 @@ app.config(function($routeProvider) {
 var currentLanguage = localStorage.getItem('language');
 
 if( currentLanguage == null ){
-    localStorage.setItem('language', 'ch');
+    localStorage.setItem('language', 'en');
 }
 
 if( localStorage.getItem('reload') == null ){
