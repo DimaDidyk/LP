@@ -1,4 +1,4 @@
-﻿/* Typography
+/* Typography
 -------------------------------------*/
 body{
 	background-color: #f7f7f7 !important;
@@ -329,27 +329,24 @@ body {
 
 
 
-#wrapper canvas {
+#wrapper{
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 2500px;
-}
-
-#canvas {
-	z-index: 1;
-	/* background: #262b2e; */
-	height: 800px;
-}
-#canvasbg {
-	z-index: -10;
-	/* opacity: 0.6; */
 	background: #262b2e;
-	z-index: 00;
+	width: 100%;
+	height: 100%;
 }
 #wrapper canvas{
 	display: none;
-
+	height: 800px;
+	width: 1950px;
+}
+#canvas {
+	z-index: 1;
+}
+#canvasbg {
+	z-index: -10;
 }
 #home #wrapper canvas{
 	display: block;
