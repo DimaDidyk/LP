@@ -26,7 +26,7 @@ if( currentLanguage == "en"){
 			 // slide3
 			 "slide3-title-1": 'Labor Share Network',
 			 "slide3-title-2": 'Ecosystem Architecture',
-			 "slide3-img": './img/diagramma.png',
+			 "slide3-img": './img/arch_en.png',
 			 "slide3-p-1": 'The LP chain running system adopts the module componentized underlying architecture. When users build blockchain applications or sub-chains, most of the components are designed to be referenced and pluggable. For example, the working component supports POW. POS, DPOS, PBFT, etc.',
 			 // slide 4
 			 "slide4-title-1": 'Labor Share Network',
