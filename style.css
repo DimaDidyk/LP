@@ -720,6 +720,7 @@ border-bottom: 1px solid #fff;
 		display: block;
 		float: right;
 		position: absolute;
+		z-index: 1;
 		right: 30px;
 		margin:  0;
 		bottom: 34px;
