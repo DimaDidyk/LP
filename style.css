@@ -720,6 +720,7 @@ border-bottom: 1px solid #fff;
 		display: block;
 		float: right;
 		position: absolute;
+		z-index: 1;
 		right: 30px;
 		margin:  0;
 		bottom: 34px;
@@ -791,7 +792,7 @@ border-bottom: 1px solid #fff;
 		height: -webkit-max-content;
 		height: -moz-max-content;
 		height: max-content;
-		padding-top: 160px;
+		padding-top: 120px;
 		max-width: 100%;
 	}
 	#home .left-content h2{
@@ -834,7 +835,9 @@ border-bottom: 1px solid #fff;
 
   .social-media{
     bottom: 50px;
-    text-align: right;
+    right: 0;
+    left: 0;
+    text-align: center;
   }
   .social-icon{
     height: 35px;
