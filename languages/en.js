@@ -11,23 +11,23 @@ if( currentLanguage == "en"){
 			 // HOME PAGE
 			 // slide 1
 			 "slide1-title-1": 'Labor Share Network',
-			 "slide1-title-2": 'Labor sharing public welfare transparent service platform',
-			 "slide1-p": 'The LP chain token platform is based on the establishment of blockchain technology, with smart contracts as payment technology, giving full play to the decentralization of blockchain and the fairness and transparency of information. It is the platform that all information can be shared and trusted, providing users with high Quality workforce services.',
+			 "slide1-title-2": 'Labor sharing public service platform',
+			 "slide1-p": 'The LT chain token platform is based on the establishment of blockchain technology, with smart contracts as payment technology, giving full play to the decentralization of blockchain and the fairness and transparency of information.',
 			 "slide1-right-p": 'Countdown',
 			 // slide2
 			 "slide2-title-1": 'Labor Share Network',
 			 "slide2-title-2": 'Ecosystem',
-			 "slide2-ecosystem-1": 'LP Ecosystem',
-			 "slide2-ecosystem-2": 'LP Chain',
-			 "slide2-ecosystem-3": 'LP Coin',
-			 "slide2-ecosystem-text-1": 'LP Ecosystem opens the era of globalized shared labor service digitalization, realizing the benefits of no middlemen exploiting workers, and the platform does not draw any commission.',
-			 "slide2-ecosystem-text-2": 'LP Chain is the world\'s first labor-sharing public service transparent service platform. It is a new ecosystem based on blockchain technology development, and is committed to building a global shared and transparent labor service platform.',
-			 "slide2-ecosystem-text-3": 'LP Token By averaging the underlying idle workforce, the average economic benefit per hour that each Token represents can be created.',
+			 "slide2-ecosystem-1": 'LT Ecosystem',
+			 "slide2-ecosystem-2": 'LT Chain',
+			 "slide2-ecosystem-3": 'LT Coin',
+			 "slide2-ecosystem-text-1": 'LT Ecosystem opens the era of globalized shared labor service digitalization, realizing the benefits of no middlemen exploiting workers, and the platform does not draw any commission.',
+			 "slide2-ecosystem-text-2": 'LT Chain is the world\'s first labor-sharing public service transparent service platform. It is a new ecosystem based on blockchain technology development, and is committed to building a global shared and transparent labor service platform.',
+			 "slide2-ecosystem-text-3": 'LT Token By averaging the underlying idle workforce, the average economic benefit per hour that each Token represents can be created.',
 			 // slide3
 			 "slide3-title-1": 'Labor Share Network',
 			 "slide3-title-2": 'Ecosystem Architecture',
 			 "slide3-img": './img/arch_en.png',
-			 "slide3-p-1": 'The LP chain running system adopts the module componentized underlying architecture. When users build blockchain applications or sub-chains, most of the components are designed to be referenced and pluggable. For example, the working component supports POW. POS, DPOS, PBFT, etc.',
+			 "slide3-p-1": 'The LT chain running system adopts the module componentized underlying architecture. When users build blockchain applications or sub-chains, most of the components are designed to be referenced and pluggable. For example, the working component supports POW. POS, DPOS, PBFT, etc.',
 			 // slide 4
 			 "slide4-title-1": 'Labor Share Network',
 			 "slide4-title-2": 'News',
@@ -49,7 +49,7 @@ if( currentLanguage == "en"){
 			 // TOKEN PAGE
 			 "token-title-1": 'Token',
 			 "token-p-1": 'Project',
-			 "token-p-2": 'The planned total circulation is 1 billion LP Tokens.',
+			 "token-p-2": 'The planned total circulation is 1 billion LT Tokens.',
 			 "token-p-3": 'Specific allocation plan:',
  
 			 "token-progress-title-1": 'Pre sale',

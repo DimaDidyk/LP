@@ -17,12 +17,12 @@ if( currentLanguage == "ch"){
 	        // slide2
 	        "slide2-title-1": '无忧链',
 	        "slide2-title-2": '生态系统',
-	        "slide2-ecosystem-1": 'LP Ecosystem',
-	        "slide2-ecosystem-2": 'LP Chain',
-	        "slide2-ecosystem-3": 'LP Coin',
-	        "slide2-ecosystem-text-1": 'LP Ecosystem 开启全球化共享劳动力服务数字化时代，实现没有中间商剥削劳动者的收益，平台也不抽取任何佣金。',
-	        "slide2-ecosystem-text-2": 'LP Chain 是全球第一个劳动力共享公益透明化服务平台，是基于区块链技术开发的新生态，致力于建立一个实现全球共享透明的劳动力服务平台。。',
-	        "slide2-ecosystem-text-3": 'LP Token 通过将底层闲散劳动力通证化，每个 Token 代表的劳动力每小时可创造的平均经济效益。',
+	        "slide2-ecosystem-1": 'LT Ecosystem',
+	        "slide2-ecosystem-2": 'LT Chain',
+	        "slide2-ecosystem-3": 'LT Coin',
+	        "slide2-ecosystem-text-1": 'LT Ecosystem 开启全球化共享劳动力服务数字化时代，实现没有中间商剥削劳动者的收益，平台也不抽取任何佣金。',
+	        "slide2-ecosystem-text-2": 'LT Chain 是全球第一个劳动力共享公益透明化服务平台，是基于区块链技术开发的新生态，致力于建立一个实现全球共享透明的劳动力服务平台。。',
+	        "slide2-ecosystem-text-3": 'LT Token 通过将底层闲散劳动力通证化，每个 Token 代表的劳动力每小时可创造的平均经济效益。',
 	        // slide3
 	        "slide3-title-1": '无忧链',
 	        "slide3-title-2": '生态构图',
@@ -49,7 +49,7 @@ if( currentLanguage == "ch"){
 	        // TOKEN PAGE
 	        "token-title-1": 'Token分配',
 	        "token-p-1": '项目',
-	        "token-p-2": '计划总发行量 10 亿枚 LP Token。',
+	        "token-p-2": '计划总发行量 10 亿枚 LT Token。',
 	        "token-p-3": '具体分配方案：',
 
 	        "token-progress-title-1": '私募比例',
