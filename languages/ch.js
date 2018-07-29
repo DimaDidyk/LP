@@ -53,16 +53,16 @@ if( currentLanguage == "ch"){
 	        "token-p-3": '具体分配方案：',
 
 	        "token-progress-title-1": '私募比例',
-	        "token-progress-p-1": '总发行量的 39%。',
+	        "token-progress-p-1": '总发行量的 20%，2亿枚，锁仓6个月，上市前先释放25%， 其他每2个月释放25%。',
 
-	        "token-progress-title-2": '团队运营',
-	        "token-progress-p-2": '总发行量的 30%。',
+	        "token-progress-title-2": '基金会',
+	        "token-progress-p-2": '总发行量的 15%，1.5亿枚，锁仓5年，第二年起每年释放25%',
 
-	        "token-progress-title-3": '团队激励',
-	        "token-progress-p-3": '总发行量的 20%。',
+	        "token-progress-title-3": '生态激励',
+	        "token-progress-p-3": '总发行量的 55%，5.5亿枚，每年释放10%，10年释放完',
 
-	        "token-progress-title-4": '技术应用研发',
-	        "token-progress-p-4": '总发行量的 11%。',
+	        "token-progress-title-4": '市场营销',
+	        "token-progress-p-4": '总发行量的 10%，1亿枚，不锁仓',
 	    };
 	});
 }
